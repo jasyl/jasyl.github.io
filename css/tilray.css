@@ -4,9 +4,7 @@ section:not(:first-child) {
 
 h3 {
   font-family: var(--headerfont);
-
 }
-
 
 img {
   width: 100%;
@@ -25,5 +23,3 @@ h3 {
   display:grid;
   grid-template: repeat(2, 1fr) / repeat(3,1fr);
 }
-
-/*  */
