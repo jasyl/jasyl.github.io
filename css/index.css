@@ -1,17 +1,12 @@
 
 
 section:not(:first-child) {
-  box-shadow: 0 -1px 0 0px var(--offwhite); 
+  border-top: solid 0.4rem var(--rule);
 }
 
 section a:hover {
-  color: var(--lilac);
+  color: var(--section);
 }
-
-/* .current-page {
-  color: #8e75fd;
-} */
-
 
 
  
@@ -21,7 +16,7 @@ h2 a {
 
 .section-title {
   font-size: 0.6rem;
-  color: var(--lilac);
+  color: var(--section);
   margin-bottom: 1rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -34,10 +29,40 @@ section {
 }
 
 img {
-  width: 12rem;
+  width: 100%;
 }
 
 .code-link {
   font-size: 0.7rem;
 }
 
+/* .design .project {
+  display: flex;
+} */
+
+/* add spacing between projects */
+.project:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.hover-images {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  
+}
+
+.logo {
+  opacity: 0;
+  transition: 0.1s;
+  transition-timing-function: ease;
+}
+
+
+
+.hover-images * {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hover-images:hover .logo {
+  opacity: 1;
+}
